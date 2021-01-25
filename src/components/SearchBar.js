@@ -13,6 +13,7 @@ class SearchBar extends React.Component {
         event.preventDefault();
         console.log(this.state.term);
         // Section for call back from parent component -- The searchterm
+        this.props.onSubmitted(this.state.term);
     };
 
     render() {
